@@ -1,9 +1,9 @@
 const express = require("express");
 const app = express();
 const port = 8080;
-app.use(express.static("../build"));
+// app.use(express.static("../build"));
 app.get("/", (req, res) => {
-  res.sendFile("index.html", { root: "../build" });
+  res.send("念宝，晚上好");
 });
 
 app.listen(port, () => {
